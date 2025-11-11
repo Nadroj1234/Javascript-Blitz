@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //let userIn = prompt("ENter your age.");
+      userIn = 5;
+      userIn = Number(userIn);
+      console.log(`${userIn} ${typeof userIn}`);
+      console.log(`${userIn + userIn}`);
+      // truthy and falsey
+      // the way values that are not explicity tru or false are interpreted.
+      console.log(Boolean(userIn));
+      console.log(Boolean("dog")); //true
+      console.log(Boolean("")); //false (any non empty string is true)
+      console.log(Boolean([])); //true
+
+      let randomThing;
+      console.log(randomThing); //undefined
+      //we often see this for DOM elements we did not get
+      //console.log(randomThing.innerHTML); //Uncaught TypeError: Cannot read properties of undefined (reading 'innerHTML')
+
+      //math Object:
+      console.log(Math.PI);
+      console.log(Math.round(3.49));
+      console.log(Math.ceil(3.2));
+      console.log(Math.floor(3.6));
+      console.log(Math.trunc(3.89999));
+
+      //Random number:
+      console.log(Math.random()); // returns a float btween 0 and 1
+      // to get an int between 0 and 9
+      console.log(Math.floor(Math.random() * 10));
+
+      // to get an int in a specific range (5-10)
+      console.log(Math.floor(Math.random() * 6) + 5);
+
+      const min = 50;
+      const max = 100;
+      console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+      //comparisons!
+      console.log("5" == 5); //true
+      console.log("5" === 5); //false
+
+      output =
+        500 > 67
+          ? "Thats true, 500 is greater than 67"
+          : "Thats false, 500 is not greater than 67.";
+      console.log(5 > 10 ? "yup" : "nope");
+    </script>
+  </body>
+</html>
