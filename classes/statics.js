@@ -30,7 +30,7 @@ console.log(cb2);
 console.log('"healthier');
 console.log(CandyBar.healthier(cb, cb2));
 
-// not use the class name for this
+// you use the class name for this
 
 console.log(CandyBar.totalCandyBars + " <- total CB");
 
